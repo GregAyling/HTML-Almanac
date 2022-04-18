@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <title>Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Greg Ayling">
+  <link rel="stylesheet" type="text/css" href="../home/almanac.css">
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+  <script type="text/javascript" src="gallery.js"></script>
+  <script type="text/javascript" src="../home/almanac.js"></script>
+  <script language="javascript">
+    function startup(){
+      addMenu("gallery");
+      setup();
+    }
+  </script>
+</head>
+<body onload="startup()">
+	
+  <div class="topnav" id=almanac_menu></div>
+
+  <div class="gallerySelector">
+	  Choose gallery
+    <br>
+	  <button id="cloudsId" onClick="displayGallery('clouds')">Clouds</button>
+	  <button id="flowersId" onClick="displayGallery('flowers')">Flowers</button>
+  </div>
+
+  <br>
+  
+  <div class="gallerySummary" id="gallerySummaryId">
+	  <u><span id="selectedGalleryId"></span></u>
+  </div>
+
+  <div class="galleryDetail">
+	<table class="center">
+		<tr>
+			<td><button id="prevButtonId" onclick="prevImage()"><</button></td>
+			<td><a id="photoId" target="_blank" href="default.jpg"><img id="imageCurrentId" src="default.jpg" height="700px" onerror="imgError()"></a></td>
+			<td><button id="nextButtonId" onclick="nextImage()">></button></td>
+		</tr>
+	</table>
+  </div>
+  
+ 
+</body>
+</html>
