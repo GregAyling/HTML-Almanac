@@ -1,0 +1,26 @@
+
+th {
+  font-size: 16px;
+  font-family: 'Arial Bold';
+  background-color: salmon;
+  vertical-align:bottom;
+  border-bottom: 2px solid black;
+}
+
+td {
+  font-size: 12px;
+  font-family: 'Arial';
+  text-align:center;
+  vertical-align:top;
+  border-bottom: 2px solid black;
+}
+
+.attribution{
+  font-size:10px;
+  font-family: 'Arial';
+}
+	
+.steam-engines {
+	width: 90%;
+	margin: 5%;
+}

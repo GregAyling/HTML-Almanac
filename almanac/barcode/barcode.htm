@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BARCODES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Greg Ayling">
+  <link rel="stylesheet" type="text/css" href="../home/almanac.css">
+  <link rel="stylesheet" type="text/css" href="barcode.css">
+  <script type="text/javascript" src="barcode.js"></script>
+  <script type="text/javascript" src="../home/almanac.js"></script>
+</head>
+
+<body onload='addMenu("barcode")'>
+  <div class="topnav" id=almanac_menu></div>
+
+<div class="barcode">
+  <form>
+    <label for="barcodeValue">Barcode value:</label><br>
+    <input type="text" id="barcodeValue" name="barcodeValue" value="EXAMPLE">
+    <br>
+    <label for="code">Code type:</label><br>
+    <select id="code" name="code">
+      <option value="Code128">Code-128</option>
+      <option value="Code11">Code-11</option>
+      <option value="Code25IL">Code-2of5 Interleaved</option>
+      <option value="Code39">Code-39</option>
+    </select>
+  </form>
+  <button onclick='displayBarcode(barcodeValue, code)'>Display Barcode</button>
+  <br><br><br>
+</div>
+
+<div class="barcodeOutput" style='padding-top:8px; text-align:center; font-size:15px; font-family: Source Sans Pro, Arial, sans-serif;'>
+  <span id="message"></span><br>
+  <img alt='Barcode Generator TEC-IT' id="barcode" src='https://barcode.tec-it.com/barcode.ashx?data=EXAMPLE&code=Code128'/>
+  <br><br>
+  <!-- back-linking to www.tec-it.com is required -->
+  <a href='https://www.tec-it.com' title='Barcode Software by TEC-IT' target='_blank'>TEC-IT Barcode Generator</a>
+  <br><br>
+  <!-- logos are optional -->
+  <img alt='TEC-IT Barcode Software' border='0' src='http://www.tec-it.com/pics/banner/web/TEC-IT_Logo_75x75.gif'>
+</div>
+
+</body>
+</html>

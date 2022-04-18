@@ -1,0 +1,43 @@
+body {
+  background-color: white;
+}
+
+.barcode {
+	width: 90%;
+  margin: auto;
+  font: 24px  'Arial';
+  font-weight:bold;
+	align-items: center;
+  text-align: center;
+}
+
+.barcodeOutput {
+	width: 98%;
+	margin: auto;
+	align-items: center;
+  text-align: center;
+}
+
+button {
+	width: 600px;
+	height: 50px;
+	font: 24px 'Arial';
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+#barcodeValue {
+  width: 600px;
+  margin: 10px auto;
+  font: 48px 'Courier New';
+  font-weight: bold;
+  color: blue;
+}
+
+#code {
+  width: 600px;
+  margin: 10px auto;
+  font: 48px 'Courier New';
+  font-weight: bold;
+  color: blue;
+}

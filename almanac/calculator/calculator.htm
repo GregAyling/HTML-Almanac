@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CALCULATOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Greg Ayling">
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+  <link rel="stylesheet" type="text/css" href="../home/almanac.css">
+  <script type="text/javascript" src="calculator.js"></script>
+  <script type="text/javascript" src="../home/almanac.js"></script>
+</head>
+
+<body onload='addMenu("calculator")'>
+  <div class="topnav" id=almanac_menu></div>
+  <br>
+  <div class="calculator">
+    <p id="cdisplay" class="cdisplay">0</p>
+
+<button onclick='perCentise("cdisplay")'>%</button>
+<button onclick='clearEntry("cdisplay")'>CE</button>
+<button onclick='clearAll("cdisplay")'>C</button>
+<button onclick='backSpace("cdisplay")'>BSp</button>
+<br>
+<button onclick='invert("cdisplay")'>1/x</button>
+<button onclick='square("cdisplay")'>SQ</button>
+<button onclick='squareRoot("cdisplay")'>SQRT</button>
+<button onclick='operate("cdisplay","+")'>+</button>
+<br>
+<button onclick='append("cdisplay","7")'>7</button>
+<button onclick='append("cdisplay","8")'>8</button>
+<button onclick='append("cdisplay","9")'>9</button>
+<button onclick='operate("cdisplay","-")'>-</button>
+<br>
+<button onclick='append("cdisplay","4")'>4</button>
+<button onclick='append("cdisplay","5")'>5</button>
+<button onclick='append("cdisplay","6")'>6</button>
+<button onclick='operate("cdisplay","*")'>*</button>
+<br>
+<button onclick='append("cdisplay","1")'>1</button>
+<button onclick='append("cdisplay","2")'>2</button>
+<button onclick='append("cdisplay","3")'>3</button>
+<button onclick='operate("cdisplay","/")'>/</button>
+<br>
+<button onclick='changeSign("cdisplay")'>+/-</button>
+<button onclick='append("cdisplay","0")'>0</button>
+<button onclick='append("cdisplay",".")'>.</button>
+<button onclick='calculate("cdisplay")'>=</button>
+</div>
+
+</body>
+</html>

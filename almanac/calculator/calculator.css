@@ -1,0 +1,29 @@
+.calculator {
+	margin: auto;
+  width: 660px;
+  border: 3px solid black;
+  padding: 10px;
+  box-shadow: 10px 10px;
+	background-color: lightgray;
+}
+
+button {
+	background-color: gray;
+  margin: 10px;
+	width: 140px;
+	height: 140px;
+	font: 48px 'Courier New';
+	font-weight: bold;
+  box-shadow: 10px 10px;
+	border-radius: 30px;
+}
+
+.cdisplay {
+  width: 640px;
+  margin: 10px;
+  border-radius: 10px;
+  font: 48px 'Courier New';
+  font-weight: bold;
+  color: blue;
+  background-color: darkgrey;
+}

@@ -1,0 +1,61 @@
+<head>
+  <title>Boggle 4*4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Greg Ayling">
+  <link rel="stylesheet" type="text/css" href="../home/almanac.css">
+  <link rel="stylesheet" type="text/css" href="boggle4.css">
+  <script type="text/javascript" src="boggle4.js"></script>
+  <script type="text/javascript" src="../home/almanac.js"></script>
+  <script language="javascript">
+    function startup(){
+      addMenu("boggle4");
+      shuffle();
+    }
+  </script>
+</head>
+<body onload="startup()">
+	<div class="topnav" id=almanac_menu></div>
+	<br>
+	<div class="boggle4">
+		<button height="100px" onClick="shuffle()">Shuffle</button>
+		<br><br>
+		<table>
+			<tr>
+				<td id="a4" width="100px" height="100px" class="square" onclick="addLetter('a4')"></td>
+				<td id="b4" width="100px" height="100px" class="square" onclick="addLetter('b4')"></td>
+				<td id="c4" width="100px" height="100px" class="square" onclick="addLetter('c4')"></td>
+				<td id="d4" width="100px" height="100px" class="square" onclick="addLetter('d4')"></td>
+			</tr>
+			<tr>
+				<td id="a3" width="100px" height="100px" class="square" onclick="addLetter('a3')"></td>
+				<td id="b3" width="100px" height="100px" class="square" onclick="addLetter('b3')"></td>
+				<td id="c3" width="100px" height="100px" class="square" onclick="addLetter('c3')"></td>
+				<td id="d3" width="100px" height="100px" class="square" onclick="addLetter('d3')"></td>
+			</tr>
+			<tr>
+				<td id="a2" width="100px" height="100px" class="square" onclick="addLetter('a2')"></td>
+				<td id="b2" width="100px" height="100px" class="square" onclick="addLetter('b2')"></td>
+				<td id="c2" width="100px" height="100px" class="square" onclick="addLetter('c2')"></td>
+				<td id="d2" width="100px" height="100px" class="square" onclick="addLetter('d2')"></td>
+			</tr>
+			<tr>
+				<td id="a1" width="100px" height="100px" class="square" onclick="addLetter('a1')"></td>
+				<td id="b1" width="100px" height="100px" class="square" onclick="addLetter('b1')"></td>
+				<td id="c1" width="100px" height="100px" class="square" onclick="addLetter('c1')"></td>
+				<td id="d1" width="100px" height="100px" class="square" onclick="addLetter('d1')"></td>
+			</tr>
+		</table>
+		<br>
+		Word: <span id="word"></span><br>
+		<br>
+		<button onclick="saveWord()">Save Word</button>
+		<button onclick="backSpace()">Backspace</button>
+		<button onclick="cancelWord()">Cancel Word</button>
+		<br><br>
+		Saved Words (Count=<span id="wordCount">0</span>):<br>
+		<span class="savedWords" id="savedWords"></span><br>
+	</div>
+  
+ 
+</body>
+</html>

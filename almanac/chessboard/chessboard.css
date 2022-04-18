@@ -1,0 +1,55 @@
+.chessboard {
+	margin: auto;
+  width: 660px;
+  border: 3px solid black;
+  padding: 10px;
+  box-shadow: 10px 10px;
+	background-color: white;
+}
+
+.control {
+	margin: auto;
+  width: 450px;
+}
+
+.dark_square{
+	background-color:rgb(88,88,88);
+	text-align:center;
+	border: 2px solid black;
+}
+
+.light_square{
+	background-color:rgb(179,179,179);
+	text-align:center;
+	border: 2px solid black;
+}
+
+.rowind{
+	text-align:center;
+}
+
+.colind{
+	text-align:center;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+header{
+  font-family: 'Times New Roman', bold;
+  font-size: 32px;
+  font-style: italic;
+  line-height: 48px;
+  text-transform:capitalize;
+  text-shadow:4px 4px 8px blue;
+}
