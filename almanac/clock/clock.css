@@ -1,0 +1,36 @@
+
+.dateField {
+  width: 100%;
+  max-width: 2000px;
+  margin: 10px auto;
+  text-align: left;
+  font: 96px 'Courier New';
+  font-weight: bold;
+  color: blue;
+  background-color: black;
+}
+.clock_face {
+  width: 80%;
+  max-width: 960px;
+  margin: 0px auto;
+  text-align: center;
+  font: 192px 'Courier New';
+  font-weight: bold;
+  color: black;
+}
+.prog_bar {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0px auto;
+  text-align: left;
+  font: 96px 'Courier New';
+  font-weight: bold;
+}
+.canvas {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  font: 96px 'Courier New';
+  font-weight: bold;
+  color: green;;
+}
